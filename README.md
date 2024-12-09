@@ -4,6 +4,8 @@ Reproduction under macOS 14.7 (23H124) on Apple Silicon with Docker Desktop 4.36
 
 selenium-webdriver@4.27.0 and chrome@131.0.6778.85.
 
+Note: Seems to have resolved with 131.0.6778.108.
+
 Run:
 
 ```
