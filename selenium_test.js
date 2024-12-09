@@ -29,6 +29,10 @@ const chromeDriverService = new chrome.ServiceBuilder(
   chromeDriverBinary
 ).build();
 
+if (!chromeDriverBinary) {
+  throw new Error("ChromeDriver not found");
+}
+
 const driver = chrome.Driver.createSession(opts, chromeDriverService);
 
 const main = async () => {

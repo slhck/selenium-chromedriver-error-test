@@ -1,6 +1,8 @@
 #!/bin/bash
 
-docker build -t selenium-test .
+set -e
+
+docker build -t selenium-test . --progress=plain
 
 # if container already exists, remove it
 docker stop selenium-test || true

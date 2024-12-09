@@ -26,6 +26,7 @@ RUN apt-get update -qq \
   && rm -rf /var/lib/apt/lists/*
 
 # install cron, chromium and chromedriver without recommended extras,
+ARG CHROMIUM_VERSION=131.0.6778.108
 RUN apt-get update -qq \
   && apt-get install -y --no-install-recommends \
   cron \
